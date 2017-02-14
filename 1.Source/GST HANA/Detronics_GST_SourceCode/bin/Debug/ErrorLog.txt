@@ -1,0 +1,50 @@
+8/15/2016 3:08:42 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+8/15/2016 3:09:10 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Add-Function: Return Code-5012
+16/08/2016 8:11:15 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+16/08/2016 8:12:59 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+16/08/2016 8:16:42 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Add-Function: Return Code0
+16/08/2016 8:25:11 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+16/08/2016 8:26:22 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Add-Function: Return Code0
+16/08/2016 8:26:51 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+16/08/2016 8:30:30 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+16/08/2016 8:30:35 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Add-Function: Return Code0
+16/08/2016 8:42:02 PM:Class:F_JournalEntry Function:JournalEntry_DP Error Message:System.Runtime.InteropServices.COMException (0xFFFFF830): 1). [SAP AG][LIBODBCHDB32 DLL][HDBODBC32] General error;2048 column store error: search table error:  [6859] AttributeEngine: divide by zero;string comma(string box(string "DETTEST2.JDT1.Account", string "DETTEST2.JDT1.ShortName", string 'N', string 'Y'), st
+
+   at SAPbobsCOM.IRecordset.DoQuery(String QueryStr)
+   at Kay_Ess_JE.F_JournalEntry.JournalEntry_DP(String DocEntry) in C:\Users\Administrator\Desktop\Detronics\F_JournalEntry.vb:line 301
+19/08/2016 10:40:36 AM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+19/08/2016 10:40:36 AM:Class:F_JournalEntry Function:JournalEntry_CNStart Add-Function: Return Code0
+19/08/2016 10:43:28 AM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+19/08/2016 10:43:28 AM:Class:F_JournalEntry Function:JournalEntry_CNStart Add-Function: Return Code0
+22/08/2016 12:51:42 PM:Class:F_JournalEntry Function:JournalEntry Error Message:System.InvalidCastException: Conversion from string "Class:F_JournalEntry Function:Jo" to type 'Double' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   at Kay_Ess_JE.F_JournalEntry.JournalEntry(String DocEntry) in C:\Abeo\Detronics\F_JournalEntry.vb:line 203
+22/08/2016 12:57:50 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+22/08/2016 12:57:50 PM:Class:F_JournalEntry Function:JournalEntry Error Message:System.InvalidCastException: Conversion from string "Class:F_JournalEntry Function:Jo" to type 'Double' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   at Kay_Ess_JE.F_JournalEntry.JournalEntry_CN(String DocEntry) in C:\Abeo\Detronics\F_JournalEntry.vb:line 82
+22/08/2016 12:58:14 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+22/08/2016 12:58:26 PM:Class:F_JournalEntry Function:JournalEntry Error Message:System.InvalidCastException: Conversion from string "Class:F_JournalEntry Function:Jo" to type 'Double' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   at Kay_Ess_JE.F_JournalEntry.JournalEntry_CN(String DocEntry) in C:\Abeo\Detronics\F_JournalEntry.vb:line 82
+22/08/2016 12:58:43 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Function
+22/08/2016 12:58:54 PM:Class:F_JournalEntry Function:JournalEntry_CNStart Add-Function: Return Code0
+12/13/2016 2:09:27 PM:Class:F_JournalEntry Function:JournalEntry Error Message:System.Runtime.InteropServices.COMException (0xFFFFF830): 1). [SAP AG][LIBODBCHDB32 DLL][HDBODBC32] Syntax error or access violation;257 sql syntax error: incorrect syntax near "Invalid": line 1 col 70 (at pos 70)
+
+   at SAPbobsCOM.IRecordset.DoQuery(String QueryStr)
+   at Kay_Ess_JE.F_JournalEntry.JournalEntry(String DocEntry) in C:\Abeo\Detronics\F_JournalEntry.vb:line 370
+12/13/2016 2:38:32 PM:Class:F_JournalEntry Function:JournalEntry Error Message:System.Runtime.InteropServices.COMException (0xFFFFFFFF): Invalid row
+   at SAPbobsCOM.JournalEntries_LinesClass.SetCurrentLine(Int32 LineNum)
+   at Kay_Ess_JE.F_JournalEntry.JournalEntry(String DocEntry)

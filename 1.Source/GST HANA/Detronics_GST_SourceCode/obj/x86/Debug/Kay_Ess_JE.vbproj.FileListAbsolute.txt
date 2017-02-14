@@ -1,0 +1,14 @@
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\obj\x86\Debug\Interop.SAPbobsCOM.dll
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\obj\x86\Debug\Interop.SAPbouiCOM.dll
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\obj\x86\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\bin\x86\Debug\Kay_Ess_JE.exe
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\bin\x86\Debug\Kay_Ess_JE.pdb
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\bin\x86\Debug\Kay_Ess_JE.xml
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\bin\x86\Debug\Interop.SAPbobsCOM.dll
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\bin\x86\Debug\Interop.SAPbouiCOM.dll
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\obj\x86\Debug\Kay_Ess_JE.Resources.resources
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\obj\x86\Debug\Kay_Ess_JE.vbproj.GenerateResource.Cache
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\obj\x86\Debug\Kay_Ess_JE.exe
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\obj\x86\Debug\Kay_Ess_JE.xml
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\obj\x86\Debug\Kay_Ess_JE.pdb
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\1.Source\GST HANA\Detronics_GST_SourceCode\bin\x86\Debug\Kay_Ess_JE.exe.config

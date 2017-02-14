@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddOnRegData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SlientInstallation="No" SlientUpgrade="No" Partnernmsp="Abeo" SchemaVersion="" Type="" MultipleVersion="false" OnDemand="" OnPremise="" ExtName="AE_DetronicsGST_IN01" ExtVersion="10" Contdata="Abeo" Partner="Abeo" DBType="HANA" ClientType="A">
+  <Validity>
+    <SBOCompatibility>
+      <Version From="920.160.06" To="920.160.06" />
+    </SBOCompatibility>
+  </Validity>
+  <Configuration>
+    <Repository />
+    <Deployment>
+      <Properties />
+    </Deployment>
+    <Assignment>
+      <Properties />
+    </Assignment>
+  </Configuration>
+  <Addons>
+    <Addon Name="" Group="" ForceFlag="" Visible="" AutoAssign="" SelfUpgrd="">
+      <x86 AddonExe="E:\Abeo Projects\Detronics\GST\HANA\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\bin\Debug\Kay_Ess_JE.exe" AddonSig="">
+        <Installation>
+          <Files>
+            <File FileName="Kay_Ess_JE.exe">
+              <Actions />
+            </File>
+          </Files>
+        </Installation>
+        <Uninstallation>
+          <Files>
+            <File FileName="Kay_Ess_JE.exe">
+              <Actions />
+            </File>
+          </Files>
+        </Uninstallation>
+      </x86>
+      <x64 AddonExe="E:\Abeo Projects\Detronics\GST\HANA\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\bin\Debug\Kay_Ess_JE.exe" AddonSig="">
+        <Installation>
+          <Files>
+            <File FileName="Interop.SAPbobsCOM.dll">
+              <Actions />
+            </File>
+            <File FileName="Interop.SAPbouiCOM.dll">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.b1s">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.exe">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.pdb">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.vshost.exe">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.xml">
+              <Actions />
+            </File>
+          </Files>
+        </Installation>
+        <Uninstallation>
+          <Files>
+            <File FileName="Interop.SAPbobsCOM.dll">
+              <Actions />
+            </File>
+            <File FileName="Interop.SAPbouiCOM.dll">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.b1s">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.exe">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.pdb">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.vshost.exe">
+              <Actions />
+            </File>
+            <File FileName="Kay_Ess_JE.xml">
+              <Actions />
+            </File>
+          </Files>
+        </Uninstallation>
+      </x64>
+    </Addon>
+  </Addons>
+  <XApps>
+    <XApp Name="" Path="" FileName="" />
+  </XApps>
+  <UDQs>
+    <UDQ udqname="">
+      <Hana FileName="" />
+    </UDQ>
+  </UDQs>
+</AddOnRegData>
