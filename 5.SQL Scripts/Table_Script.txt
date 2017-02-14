@@ -1,0 +1,37 @@
+DROP TABLE "AE_ITEMMASTER_SYNC"
+  CREATE COLUMN TABLE "AE_ITEMMASTER_SYNC"(
+     "Code" nvarchar(30) not null,
+     "Name" nvarchar(30) not null,
+     "ItemCode" nvarchar(50),
+     "Status" nvarchar(20),
+     "SyncDate" TIMESTAMP,
+     "SyncTime" nvarchar(20),
+     "ErrMsg" NCLOB
+ );    
+*************************************************************
+DROP TABLE "AE_BP_SYNC";
+CREATE COLUMN TABLE "AE_BP_SYNC"(
+     "Code" nvarchar(30) not null,
+     "Name" nvarchar(30) not null,
+     "BPCode" nvarchar(30),
+     "Status" nvarchar(20),
+     "SyncDate" TIMESTAMP,
+     "SyncTime" nvarchar(20),
+     "ErrMsg" NCLOB
+ );
+     
+******************************************************************
+
+DROP TABLE "AE_BP_PRICE_SYNC"  
+CREATE COLUMN TABLE "AE_BP_PRICE_SYNC"(
+     "Code" nvarchar(30) not null,
+     "Name" nvarchar(30) not null,
+     "BPCode" nvarchar(30),
+     "ItemCode" nvarchar(50),  
+     "Status" nvarchar(20),
+     "SyncDate" TIMESTAMP,
+     "SyncTime" nvarchar(20),
+     "ErrMsg" NCLOB
+ );
+         
+ 

@@ -1,0 +1,78 @@
+--DROP PROCEDURE SBO_SP_TransactionNotification;
+CREATE PROCEDURE SBO_SP_TransactionNotification
+(
+	in object_type nvarchar(20), 				-- SBO Object Type
+	in transaction_type nchar(1),			-- [A]dd, [U]pdate, [D]elete, [C]ancel, C[L]ose
+	in num_of_cols_in_key int,
+	in list_of_key_cols_tab_del nvarchar(255),
+	in list_of_cols_val_tab_del nvarchar(255)
+	
+)
+LANGUAGE SQLSCRIPT
+AS
+-- Return values
+cnt int;
+error  int;				-- Result (0 for no error)
+error_message nvarchar (200); 		-- Error string to be displayed
+begin
+
+error := 0;
+error_message := N'Ok';
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+--	ADD	YOUR	CODE	HERE
+
+--------------------------------------------------------------------------------------------------------------------------------
+if :object_type='4' and (:transaction_type='A' or :transaction_type='U') then
+
+	Update  "OITM" SET "U_SyncStatus" = 'Pending' where "ItemCode" = :list_of_cols_val_tab_del;           
+
+	select count("Code")+1 into cnt from "AE_ITEMMASTER_SYNC";
+	if :cnt>0 then
+		insert into "AE_ITEMMASTER_SYNC" ("Code","Name","ItemCode","Status")values 
+		(cnt,cnt,:list_of_cols_val_tab_del,'Pending') ;  
+	end if;  
+end if;
+
+if :object_type='2' and (:transaction_type='A' or :transaction_type='U') then
+
+	SELECT count(T1."GroupName") into cnt FROM OCRD T0  INNER JOIN OCRG T1 ON T0."GroupCode" = T1."GroupCode" 
+	WHERE T0."CardCode" = :list_of_cols_val_tab_del AND T0."CardType" = 'S' AND T1."GroupName"  like '%Trade%';
+
+	if :cnt>0 then
+		Update  "OCRD" SET "U_SyncStatus" = 'Pending' where "CardCode"  = :list_of_cols_val_tab_del;           
+		
+		select count("Code")+1 into cnt from "AE_BP_SYNC";
+		if :cnt>0 then
+			insert into "AE_BP_SYNC" ("Code","Name","BPCode","Status")values 
+			(cnt,cnt,:list_of_cols_val_tab_del,'Pending') ;  
+		end if;
+	end if;	
+end if;
+-- Special Price List - BP
+if :object_type='7' and (:transaction_type='A' or :transaction_type='U') then
+	
+	SELECT count(T2."GroupName") into cnt FROM "OSPP"  T0 INNER JOIN "OCRD"  T1 ON T0."CardCode" = T1."CardCode" 
+	INNER JOIN "OCRG" T2 ON T1."GroupCode" = T2."GroupCode" 
+	WHERE T0."CardCode" = SUBSTRING(:list_of_cols_val_tab_del,1,instr(:list_of_cols_val_tab_del,CHAR(9))-1) 
+	AND T1."CardType" = 'S' AND T2."GroupName"  like '%Trade%';
+	 
+	if :cnt>0 then
+		Update  "OSPP" SET "U_SyncStatus" = 'Pending' where
+		"CardCode" = SUBSTRING(:list_of_cols_val_tab_del,1,instr(:list_of_cols_val_tab_del,CHAR(9))-1)
+		 AND "ItemCode" = SUBSTRING(:list_of_cols_val_tab_del,instr(:list_of_cols_val_tab_del,CHAR(9))+1,800) ;         
+		
+		select count("Code")+1 into cnt from "AE_BP_PRICE_SYNC";
+		if :cnt>0 then
+			insert into "AE_BP_PRICE_SYNC" ("Code","Name","BPCode","ItemCode","Status")values 
+			(cnt,cnt,SUBSTRING(:list_of_cols_val_tab_del,1,instr(:list_of_cols_val_tab_del,CHAR(9))-1),SUBSTRING(:list_of_cols_val_tab_del,instr(:list_of_cols_val_tab_del,CHAR(9))+1,800),'Pending') ;  
+  
+		end if;
+	end if;	
+	 
+end if;
+-- Select the return values
+select :error, :error_message FROM dummy;
+
+end;
