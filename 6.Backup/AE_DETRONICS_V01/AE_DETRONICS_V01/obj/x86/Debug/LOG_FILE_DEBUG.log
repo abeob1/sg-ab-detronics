@@ -1,0 +1,21 @@
+[10/06/2016 17:28:17][                         Main'] Starting Function
+[10/06/2016 17:28:17][      GetSystemIntializeInfo()] Starting Function
+[10/06/2016 17:28:17][      GetSystemIntializeInfo()] Starting Function
+[10/06/2016 17:28:17][      GetSystemIntializeInfo()] System Intial is Completed with ERROR
+[10/06/2016 17:28:17][                         Main'] Sync Completed with ERROR
+[10/06/2016 17:28:26][                         Main'] Starting Function
+[10/06/2016 17:28:26][      GetSystemIntializeInfo()] Starting Function
+[10/06/2016 17:28:26][      GetSystemIntializeInfo()] Starting Function
+[10/06/2016 17:28:26][      GetSystemIntializeInfo()] System Intial is Completed with ERROR
+[10/06/2016 17:28:26][                         Main'] Sync Completed with ERROR
+[10/06/2016 17:44:22][                         Main'] Starting Function
+[10/06/2016 17:44:23][      GetSystemIntializeInfo()] Starting Function
+[10/06/2016 17:44:23][      GetSystemIntializeInfo()] Starting Function
+[10/06/2016 17:44:23][      GetSystemIntializeInfo()] System Intial is Completed with ERROR
+[10/06/2016 17:44:23][                         Main'] Sync Completed with ERROR
+[10/06/2016 17:44:46][                         Main'] Starting Function
+[10/06/2016 17:44:46][      GetSystemIntializeInfo()] Starting Function
+[10/06/2016 17:44:46][      GetSystemIntializeInfo()] Starting Function
+[10/06/2016 17:44:46][      GetSystemIntializeInfo()] Completed with SUCCESS
+[10/06/2016 17:44:46][                         Main'] App DBS1;DBS1_TW;10.0.20.105:30015;SYSTEM;Sapb1hana;manager1;1234;manager1;1234
+[10/06/2016 17:44:46][                         Main'] Calling Function ConnectToCompany()
