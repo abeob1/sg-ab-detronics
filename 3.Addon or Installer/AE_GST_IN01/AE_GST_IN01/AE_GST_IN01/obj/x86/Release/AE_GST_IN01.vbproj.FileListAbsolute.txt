@@ -1,0 +1,11 @@
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\bin\x86\Release\AE_GST_IN01.exe
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\bin\x86\Release\AE_GST_IN01.xml
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\obj\x86\Release\AddOnInstaller.AddOnInstaller.BaseControl.resources
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\obj\x86\Release\AddOnInstaller.AddOnInstaller.BaseForm.resources
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\obj\x86\Release\AddOnInstaller.AddOnInstaller.InstallEndedControl.resources
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\obj\x86\Release\AddOnInstaller.AddOnInstaller.InstallMainControl.resources
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\obj\x86\Release\AddOnInstaller.AddOnInstaller.InstallPathControl.resources
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\obj\x86\Release\AddOnInstaller.AddOnInstaller.UnInstallControl.resources
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\obj\x86\Release\AE_GST_IN01.vbproj.GenerateResource.Cache
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\obj\x86\Release\AE_GST_IN01.exe
+E:\Abeo-Projects\Abeo_Projects_WorkArea\Detronics\3.Addon or Installer\AE_GST_IN01\AE_GST_IN01\AE_GST_IN01\obj\x86\Release\AE_GST_IN01.xml
