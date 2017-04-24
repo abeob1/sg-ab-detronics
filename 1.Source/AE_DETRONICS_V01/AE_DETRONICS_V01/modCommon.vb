@@ -296,7 +296,7 @@ Module modCommon
             Try
                 Dim sErrMsg As String = ""
                 Dim sErrCode As Integer = 0
-
+                
                 If targetCompany.Connected Then
                     Dim bfound As Boolean = False
                     oTItemMaster = targetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oItems)
@@ -450,6 +450,8 @@ Module modCommon
         Dim orsGroup As SAPbobsCOM.Recordset = Nothing
 
         Dim GroupName As String = ""
+        Dim sTrgtShipTypeCode As String = String.Empty
+        Dim sSrcShipTypeName As String = String.Empty
         If oItemMaster.GetByKey(ItemCode) Then
             Try
                 If oTItemMaster.GetByKey(oItemMaster.ItemCode) Then
@@ -468,7 +470,7 @@ Module modCommon
                 If orsGroup.RecordCount = 1 Then
                     oTItemMaster.ItemsGroupCode = orsGroup.Fields.Item(0).Value
                 End If
-           
+
                 'oTItemMaster.ItemsGroupCode = oItemMaster.ItemsGroupCode
                 oTItemMaster.InventoryItem = oItemMaster.InventoryItem
                 oTItemMaster.SalesItem = oItemMaster.SalesItem
@@ -583,11 +585,14 @@ Module modCommon
         sFuncName = "UpdateBPMaster()"
         Dim sSQL As String = String.Empty
         Dim oDVContact As DataView = Nothing
+        Dim sSrcShipTypeName As String = String.Empty
+        Dim sSrcPymntTrmsCod As String = String.Empty
 
         oBP = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oBusinessPartners)
         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Starting Function", sFuncName)
 
-        If oBP.GetByKey(Left(CardCode, 15)) Then
+        'If oBP.GetByKey(Left(CardCode, 30)) Then
+        If oBP.GetByKey(CardCode) Then
             Try
                 Dim sErrMsg As String = ""
                 Dim sErrCode As Integer = 0
@@ -640,6 +645,22 @@ Module modCommon
                         orsGroup.DoQuery(String.Format("Select ""GroupCode"" from ""OCRG"" where ""GroupName"" = '{0}'", GroupName))
                         If orsGroup.RecordCount = 1 Then
                             oTargetBP.GroupCode = orsGroup.Fields.Item(0).Value
+                        End If
+
+                        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Getting Shipping Code", sFuncName)
+                        orsGroup = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+                        sSQL = "SELECT ""TrnspName"" FROM ""OSHP"" WHERE ""TrnspCode"" = (SELECT ""ShipType"" FROM ""OCRD"" WHERE ""CardCode"" = '" & oBP.CardCode & "')"
+                        orsGroup.DoQuery(sSQL)
+                        If orsGroup.RecordCount = 1 Then
+                            sSrcShipTypeName = orsGroup.Fields.Item(0).Value
+                        End If
+                        If sSrcShipTypeName <> "" Then
+                            If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Getting Shipping type code in target ", sFuncName)
+                            orsGroup = targetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+                            orsGroup.DoQuery(String.Format("SELECT ""TrnspCode"" FROM ""OSHP"" WHERE ""TrnspName"" = '{0}'", sSrcShipTypeName))
+                            If orsGroup.RecordCount = 1 Then
+                                oTargetBP.ShippingType = orsGroup.Fields.Item(0).Value
+                            End If
                         End If
 
                         If oTargetBP.Valid = SAPbobsCOM.BoYesNoEnum.tYES Then
@@ -696,7 +717,22 @@ Module modCommon
 
                         End If
 
-                        oTargetBP.PayTermsGrpCode = oBP.PayTermsGrpCode
+                        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Getting Payment Code", sFuncName)
+                        orsGroup = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+                        orsGroup.DoQuery(String.Format("SELECT B.""PymntGroup"" FROM ""OCRD"" A INNER JOIN ""OCTG"" B ON B.""GroupNum"" = A.""GroupNum"" WHERE A.""CardCode"" = '{0}'", oBP.CardCode))
+                        If orsGroup.RecordCount = 1 Then
+                            sSrcPymntTrmsCod = orsGroup.Fields.Item(0).Value
+                        End If
+                        If sSrcPymntTrmsCod <> "" Then
+                            If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Getting Shipping type code in target ", sFuncName)
+                            orsGroup = targetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+                            orsGroup.DoQuery(String.Format("SELECT ""GroupNum"" FROM ""OCTG"" WHERE ""PymntGroup"" = '{0}'", sSrcPymntTrmsCod))
+                            If orsGroup.RecordCount = 1 Then
+                                oTargetBP.PayTermsGrpCode = orsGroup.Fields.Item(0).Value
+                            End If
+                        End If
+
+                        'oTargetBP.PayTermsGrpCode = oBP.PayTermsGrpCode
                         oTargetBP.IntrestRatePercent = oBP.IntrestRatePercent
                         oTargetBP.PriceListNum = oBP.PriceListNum
                         oTargetBP.DiscountPercent = oBP.DiscountPercent
@@ -905,6 +941,9 @@ Module modCommon
         Dim ors As SAPbobsCOM.Recordset = Nothing
         Dim orsTarget As SAPbobsCOM.Recordset = Nothing
         Dim GroupName As String = ""
+        Dim sSrcShipTypeName As String = String.Empty
+        Dim sSrcPymntTrmsCod As String = String.Empty
+
         Dim sFuncName = "CreateBPMaster()"
         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Starting Function", sFuncName)
         If oBP.GetByKey(CardCode) Then
@@ -956,6 +995,19 @@ Module modCommon
                     oTargetBP.GroupCode = ors.Fields.Item(0).Value
                 End If
 
+                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Getting Shipping Code", sFuncName)
+                ors.DoQuery(String.Format("SELECT ""TrnspName"" FROM ""OSHP"" WHERE ""TrnspCode"" = (SELECT ""ShipType"" FROM ""OCRD"" WHERE ""CardCode"" = '{0}')", oBP.CardCode))
+                If ors.RecordCount = 1 Then
+                    sSrcShipTypeName = ors.Fields.Item(0).Value
+                End If
+                If sSrcShipTypeName <> "" Then
+                    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Getting Shipping type code in target ", sFuncName)
+                    orsTarget.DoQuery(String.Format("SELECT ""TrnspCode"" FROM ""OSHP"" WHERE ""TrnspName"" = '{0}'", sSrcShipTypeName))
+                    If orsTarget.RecordCount = 1 Then
+                        oTargetBP.ShippingType = orsTarget.Fields.Item(0).Value
+                    End If
+                End If
+
                 'oTargetBP.DebitorAccount = oBP.DebitorAccount
                 If oTargetBP.Valid = SAPbobsCOM.BoYesNoEnum.tYES Then
                     oTargetBP.ValidFrom = oBP.ValidFrom
@@ -1003,9 +1055,20 @@ Module modCommon
                     oTargetBP.BilltoDefault = oBP.BilltoDefault
                     oTargetBP.ShipToDefault = oBP.ShipToDefault
                 End If
-               
-                
-                oTargetBP.PayTermsGrpCode = oBP.PayTermsGrpCode
+
+                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Getting Shipping Code", sFuncName)
+                ors.DoQuery(String.Format("SELECT B.""PymntGroup"" FROM ""OCRD"" A INNER JOIN ""OCTG"" B ON B.""GroupNum"" = A.""GroupNum"" WHERE A.""CardCode"" = '{0}'", oBP.CardCode))
+                If ors.RecordCount = 1 Then
+                    sSrcPymntTrmsCod = ors.Fields.Item(0).Value
+                End If
+                If sSrcPymntTrmsCod <> "" Then
+                    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Getting Shipping type code in target ", sFuncName)
+                    orsTarget.DoQuery(String.Format("SELECT ""GroupNum"" FROM ""OCTG"" WHERE ""PymntGroup"" = '{0}'", sSrcPymntTrmsCod))
+                    If orsTarget.RecordCount = 1 Then
+                        oTargetBP.PayTermsGrpCode = orsTarget.Fields.Item(0).Value
+                    End If
+                End If
+                '''''''''''oTargetBP.PayTermsGrpCode = oBP.PayTermsGrpCode
                 oTargetBP.IntrestRatePercent = oBP.IntrestRatePercent
                 oTargetBP.PriceListNum = oBP.PriceListNum
                 oTargetBP.DiscountPercent = oBP.DiscountPercent

@@ -1,0 +1,131 @@
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Kay_Ess_JE.exe
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Kay_Ess_JE.pdb
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Kay_Ess_JE.xml
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Interop.SAPbobsCOM.dll
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Interop.SAPbouiCOM.dll
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\ResolveAssemblyReference.cache
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.Resources.resources
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\ResGen.read.1.tlog
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\ResGen.write.1.tlog
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.exe
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.xml
+C:\Gopinath\K9\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.pdb
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Kay_Ess_JE.exe
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Kay_Ess_JE.pdb
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Kay_Ess_JE.xml
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Interop.SAPbobsCOM.dll
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\bin\Debug\Interop.SAPbouiCOM.dll
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.Resources.resources
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.vbproj.GenerateResource.Cache
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.exe
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.xml
+C:\Gopinath\Kay Ess\Kay_Ess_JE\Kay_Ess_JE\obj\Debug\Kay_Ess_JE.pdb
+C:\Gopinath\Detronics\Detronics\Detronics\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Gopinath\Detronics\Detronics\Detronics\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Gopinath\Detronics\Detronics\Detronics\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+C:\Gopinath\Detronics\Detronics\Detronics\obj\Debug\Kay_Ess_JE.exe
+C:\Gopinath\Detronics\Detronics\Detronics\obj\Debug\Kay_Ess_JE.xml
+C:\Gopinath\Detronics\Detronics\Detronics\obj\Debug\Kay_Ess_JE.pdb
+C:\Gopinath\Detronics\Detronics\Detronics\bin\Debug\Kay_Ess_JE.exe
+C:\Gopinath\Detronics\Detronics\Detronics\bin\Debug\Kay_Ess_JE.pdb
+C:\Gopinath\Detronics\Detronics\Detronics\bin\Debug\Kay_Ess_JE.xml
+C:\Gopinath\Detronics\Detronics\Detronics\bin\Debug\Interop.SAPbobsCOM.dll
+C:\Gopinath\Detronics\Detronics\Detronics\bin\Debug\Interop.SAPbouiCOM.dll
+C:\Gopinath\Detronics\Detronics\Detronics\obj\Debug\Kay_Ess_JE.Resources.resources
+C:\Gopinath\Detronics\Detronics\Detronics\obj\Debug\Kay_Ess_JE.vbproj.GenerateResource.Cache
+D:\Gopi\Detronics\obj\Debug\Interop.SAPbobsCOM.dll
+D:\Gopi\Detronics\obj\Debug\Interop.SAPbouiCOM.dll
+D:\Gopi\Detronics\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+D:\Gopi\Detronics\obj\Debug\Kay_Ess_JE.exe
+D:\Gopi\Detronics\obj\Debug\Kay_Ess_JE.xml
+D:\Gopi\Detronics\obj\Debug\Kay_Ess_JE.pdb
+C:\Users\Gopi1\Desktop\Detronics\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Users\Gopi1\Desktop\Detronics\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Users\Gopi1\Desktop\Detronics\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+C:\Users\Gopi1\Desktop\Detronics\obj\Debug\Kay_Ess_JE.exe
+C:\Users\Gopi1\Desktop\Detronics\obj\Debug\Kay_Ess_JE.xml
+C:\Users\Gopi1\Desktop\Detronics\obj\Debug\Kay_Ess_JE.pdb
+C:\Users\Gopi1\Desktop\Detronics\bin\Debug\Kay_Ess_JE.exe
+C:\Users\Gopi1\Desktop\Detronics\bin\Debug\Kay_Ess_JE.pdb
+C:\Users\Gopi1\Desktop\Detronics\bin\Debug\Kay_Ess_JE.xml
+C:\Users\Gopi1\Desktop\Detronics\bin\Debug\Interop.SAPbobsCOM.dll
+C:\Users\Gopi1\Desktop\Detronics\bin\Debug\Interop.SAPbouiCOM.dll
+C:\Users\Gopi1\Desktop\Detronics\obj\Debug\Kay_Ess_JE.Resources.resources
+C:\Users\Gopi1\Desktop\Detronics\obj\Debug\Kay_Ess_JE.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Detronics\bin\Debug\Kay_Ess_JE.exe
+C:\Users\Administrator\Desktop\Detronics\bin\Debug\Kay_Ess_JE.pdb
+C:\Users\Administrator\Desktop\Detronics\bin\Debug\Kay_Ess_JE.xml
+C:\Users\Administrator\Desktop\Detronics\bin\Debug\Interop.SAPbobsCOM.dll
+C:\Users\Administrator\Desktop\Detronics\bin\Debug\Interop.SAPbouiCOM.dll
+C:\Users\Administrator\Desktop\Detronics\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Users\Administrator\Desktop\Detronics\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Users\Administrator\Desktop\Detronics\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\Detronics\obj\Debug\Kay_Ess_JE.Resources.resources
+C:\Users\Administrator\Desktop\Detronics\obj\Debug\Kay_Ess_JE.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Detronics\obj\Debug\Kay_Ess_JE.exe
+C:\Users\Administrator\Desktop\Detronics\obj\Debug\Kay_Ess_JE.xml
+C:\Users\Administrator\Desktop\Detronics\obj\Debug\Kay_Ess_JE.pdb
+D:\Gopi\Detronics\bin\Debug\Kay_Ess_JE.exe
+D:\Gopi\Detronics\bin\Debug\Kay_Ess_JE.pdb
+D:\Gopi\Detronics\bin\Debug\Kay_Ess_JE.xml
+D:\Gopi\Detronics\bin\Debug\Interop.SAPbobsCOM.dll
+D:\Gopi\Detronics\bin\Debug\Interop.SAPbouiCOM.dll
+D:\Gopi\Detronics\obj\Debug\Kay_Ess_JE.Resources.resources
+D:\Gopi\Detronics\obj\Debug\Kay_Ess_JE.vbproj.GenerateResource.Cache
+C:\Abeo\Detronics\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Abeo\Detronics\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Abeo\Detronics\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+C:\Abeo\Detronics\obj\Debug\Kay_Ess_JE.exe
+C:\Abeo\Detronics\obj\Debug\Kay_Ess_JE.xml
+C:\Abeo\Detronics\obj\Debug\Kay_Ess_JE.pdb
+C:\Abeo\Detronics\bin\Debug\Kay_Ess_JE.exe
+C:\Abeo\Detronics\bin\Debug\Kay_Ess_JE.pdb
+C:\Abeo\Detronics\bin\Debug\Kay_Ess_JE.xml
+C:\Abeo\Detronics\bin\Debug\Interop.SAPbobsCOM.dll
+C:\Abeo\Detronics\bin\Debug\Interop.SAPbouiCOM.dll
+C:\Abeo\Detronics\obj\Debug\Kay_Ess_JE.Resources.resources
+C:\Abeo\Detronics\obj\Debug\Kay_Ess_JE.vbproj.GenerateResource.Cache
+C:\Abeo\Detronics_GST_SourceCode\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Abeo\Detronics_GST_SourceCode\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Abeo\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+C:\Abeo\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.exe
+C:\Abeo\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.xml
+C:\Abeo\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.pdb
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.exe
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.xml
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.pdb
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\bin\Debug\Kay_Ess_JE.exe
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\bin\Debug\Kay_Ess_JE.pdb
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\bin\Debug\Kay_Ess_JE.xml
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\bin\Debug\Interop.SAPbobsCOM.dll
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\bin\Debug\Interop.SAPbouiCOM.dll
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.Resources.resources
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.vbproj.GenerateResource.Cache
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.exe
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.xml
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.pdb
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.Resources.resources
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.vbproj.GenerateResource.Cache
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\bin\Debug\Kay_Ess_JE.exe
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\bin\Debug\Kay_Ess_JE.pdb
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\bin\Debug\Kay_Ess_JE.xml
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\bin\Debug\Interop.SAPbobsCOM.dll
+C:\Abeo\Detronics_GST_SourceCode_02Feb2017\64bit\Detronics_GST_SourceCode\bin\Debug\Interop.SAPbouiCOM.dll
+E:\Abeo-Projects\Shibin\64bit\64bit\Detronics_GST_SourceCode\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Abeo-Projects\Shibin\64bit\64bit\Detronics_GST_SourceCode\obj\Debug\Interop.SAPbouiCOM.dll
+E:\Abeo-Projects\Shibin\64bit\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.vbproj.ResolveComReference.cache
+E:\Abeo-Projects\Shibin\64bit\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.exe
+E:\Abeo-Projects\Shibin\64bit\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.xml
+E:\Abeo-Projects\Shibin\64bit\64bit\Detronics_GST_SourceCode\obj\Debug\Kay_Ess_JE.pdb

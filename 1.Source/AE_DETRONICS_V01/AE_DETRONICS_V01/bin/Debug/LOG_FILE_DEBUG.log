@@ -1,1778 +1,265 @@
-[11/07/2016 16:23:43][                         Main'] Starting Function
-[11/07/2016 16:23:43][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:23:43][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:23:43][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 16:23:43][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 16:23:43][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 16:23:54][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 16:23:54][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 16:23:54][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 16:24:03][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 16:24:03][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 16:24:03][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:24:03][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:24:03][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:24:03][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:24:03][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 16:24:03][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:24:03][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:24:03][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:24:03][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:24:03][              UpdateBPMaster()] Starting Function
-[11/07/2016 16:24:03][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS-HKD2' order by T1."CntctCode" 
-[11/07/2016 16:24:03][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 16:24:03][              UpdateBPMaster()] Attempting to Update BP TestAGATS-HKD2
-[11/07/2016 16:24:03][              UpdateBPMaster()] Attempting Contact Employees
-[11/07/2016 16:24:03][              UpdateBPMaster()] Updating BP TestAGATS-HKD2
-[11/07/2016 16:24:03][              UpdateBPMaster()] Completed with SUCCESS
-[11/07/2016 16:24:03][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:24:03][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:24:03][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:24:03][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:24:03][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:24:03][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:24:03][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:24:03][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:24:03][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:24:03][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:24:04][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:24:04][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:24:04][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:24:04][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:24:04][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:24:04][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:24:04][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:24:04][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:08][                         Main'] Starting Function
-[11/07/2016 16:26:08][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:26:08][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:26:08][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 16:26:08][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 16:26:08][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 16:26:20][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 16:26:20][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 16:26:20][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 16:26:28][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 16:26:28][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 16:26:28][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:26:28][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:26:28][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:26:28][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:26:28][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 16:26:28][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:26:28][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:26:28][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:26:28][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:26:28][              UpdateBPMaster()] Starting Function
-[11/07/2016 16:26:28][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS' order by T1."CntctCode" 
-[11/07/2016 16:26:28][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 16:26:28][              UpdateBPMaster()] Calling Function CreateBPMaster()
-[11/07/2016 16:26:28][              CreateBPMaster()] Starting Function
-[11/07/2016 16:26:28][              CreateBPMaster()] Completed with SUCCESS
-[11/07/2016 16:26:28][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:26:28][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:26:28][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:26:28][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:26:28][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:26:28][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:26:28][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:26:28][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:26:28][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:28][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:28][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:26:28][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:26:28][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:26:28][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:26:28][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:26:29][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:26:29][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:26:29][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:26:29][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:26:29][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:26:29][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:26:29][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:26:29][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:26:29][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:29:33][                         Main'] Starting Function
-[11/07/2016 16:29:33][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:29:33][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:29:33][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 16:29:33][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 16:29:33][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 16:29:44][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 16:29:44][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 16:29:44][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 16:29:53][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 16:29:53][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 16:29:53][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:29:53][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:29:53][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:29:53][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:29:53][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 16:29:53][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:29:53][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:29:53][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:29:53][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:29:53][              UpdateBPMaster()] Starting Function
-[11/07/2016 16:29:53][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS' order by T1."CntctCode" 
-[11/07/2016 16:29:53][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 16:29:53][              UpdateBPMaster()] Calling Function CreateBPMaster()
-[11/07/2016 16:29:53][              CreateBPMaster()] Starting Function
-[11/07/2016 16:31:27][              CreateBPMaster()] Completed with SUCCESS
-[11/07/2016 16:31:27][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:31:27][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:31:27][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:31:27][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:31:27][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:31:27][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:31:27][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:31:27][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:31:27][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:31:27][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:31:27][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:31:27][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:28][                         Main'] Starting Function
-[11/07/2016 16:40:28][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:40:28][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:40:28][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 16:40:28][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 16:40:28][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 16:40:39][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 16:40:39][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 16:40:39][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 16:40:47][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 16:40:47][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 16:40:47][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:40:47][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:40:47][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:40:47][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:40:47][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 16:40:47][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:40:47][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:40:47][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:40:47][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:40:47][                         Main'] No BPMaster Information for SYNC 
-[11/07/2016 16:40:47][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:40:47][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:40:47][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:40:47][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:40:47][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:40:47][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:40:47][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:40:47][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:40:48][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:40:48][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:40:48][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:40:48][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:40:48][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:40:48][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:40:48][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:41:48][                         Main'] Starting Function
-[11/07/2016 16:41:48][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:41:48][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:41:48][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 16:41:48][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 16:41:48][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 16:41:59][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 16:41:59][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 16:41:59][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 16:42:07][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 16:42:07][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 16:42:07][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:42:07][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:42:07][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:42:07][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:42:07][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 16:42:07][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:42:07][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:42:07][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:42:07][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:42:07][              UpdateBPMaster()] Starting Function
-[11/07/2016 16:42:08][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS' order by T1."CntctCode" 
-[11/07/2016 16:42:08][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 16:42:08][              UpdateBPMaster()] Calling Function CreateBPMaster()
-[11/07/2016 16:42:08][              CreateBPMaster()] Starting Function
-[11/07/2016 16:43:28][              CreateBPMaster()] Completed with SUCCESS
-[11/07/2016 16:44:12][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:44:12][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:44:12][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:44:12][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:44:12][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:44:12][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:44:12][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:44:12][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:44:12][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:44:12][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:44:12][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:44:12][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:27][                         Main'] Starting Function
-[11/07/2016 16:52:27][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:52:27][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:52:27][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 16:52:27][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 16:52:27][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 16:52:37][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 16:52:37][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 16:52:37][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 16:52:45][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 16:52:45][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 16:52:45][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:52:45][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:52:46][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:52:46][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:52:46][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 16:52:46][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:52:46][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:52:46][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:52:46][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:52:46][              UpdateBPMaster()] Starting Function
-[11/07/2016 16:52:46][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS' order by T1."CntctCode" 
-[11/07/2016 16:52:46][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 16:52:46][              UpdateBPMaster()] Attempting to Update BP TestAGATS
-[11/07/2016 16:52:46][              UpdateBPMaster()] Attempting Contact Employees
-[11/07/2016 16:52:46][              UpdateBPMaster()] Updating BP TestAGATS
-[11/07/2016 16:52:46][              UpdateBPMaster()] Completed with SUCCESS
-[11/07/2016 16:52:46][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:52:46][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:52:46][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:52:46][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:52:46][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:52:46][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:52:46][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:52:46][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:52:46][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:52:46][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:46][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:52:47][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:52:47][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:52:47][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:52:47][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:52:47][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:38][                         Main'] Starting Function
-[11/07/2016 16:54:38][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:54:38][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:54:38][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 16:54:38][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 16:54:38][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 16:54:48][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 16:54:48][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 16:54:48][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 16:54:56][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 16:54:56][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 16:54:56][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:54:56][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:54:57][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:54:57][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:54:57][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 16:54:57][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:54:57][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:54:57][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:54:57][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:54:57][                         Main'] No BPMaster Information for SYNC 
-[11/07/2016 16:54:57][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:54:57][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:54:57][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:54:57][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:54:57][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:54:57][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:54:57][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:54:57][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:54:57][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:54:57][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:54:57][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:54:57][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:55:25][                         Main'] Starting Function
-[11/07/2016 16:55:25][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:55:25][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:55:25][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 16:55:25][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 16:55:25][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 16:55:36][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 16:55:36][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 16:55:36][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 16:55:44][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 16:55:44][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 16:55:44][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:55:44][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:55:44][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:55:44][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:55:44][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 16:55:44][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:55:44][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:55:44][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:55:44][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:55:44][              UpdateBPMaster()] Starting Function
-[11/07/2016 16:55:44][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS' order by T1."CntctCode" 
-[11/07/2016 16:55:44][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 16:55:44][              UpdateBPMaster()] Attempting to Update BP TestAGATS
-[11/07/2016 16:57:08][                         Main'] Starting Function
-[11/07/2016 16:57:08][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:57:08][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 16:57:08][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 16:57:08][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 16:57:08][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 16:57:18][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 16:57:18][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 16:57:18][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 16:57:26][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 16:57:26][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 16:57:26][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:57:26][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:57:27][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:57:27][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:57:27][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 16:57:27][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:57:27][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:57:27][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:57:27][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:57:27][              UpdateBPMaster()] Starting Function
-[11/07/2016 16:57:27][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS' order by T1."CntctCode" 
-[11/07/2016 16:57:27][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 16:57:27][              UpdateBPMaster()] Attempting to Update BP TestAGATS
-[11/07/2016 16:59:04][              UpdateBPMaster()] Attempting Contact Employees
-[11/07/2016 16:59:19][              UpdateBPMaster()] Updating BP TestAGATS
-[11/07/2016 16:59:24][              UpdateBPMaster()] Completed with ERROR
-[11/07/2016 16:59:24][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 16:59:24][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 16:59:24][             HANAtoDatatable()] HANA Connection
-[11/07/2016 16:59:24][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:59:24][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:59:24][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:59:24][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:59:24][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:59:24][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 16:59:24][           CreateBPPriceList()] Starting Function
-[11/07/2016 16:59:24][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 16:59:24][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:01:58][                         Main'] Starting Function
-[11/07/2016 17:01:58][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:01:58][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:01:58][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:01:58][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:01:58][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:02:09][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:02:09][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:02:09][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:02:17][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:02:17][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:02:17][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:02:17][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:02:17][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:02:17][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:02:17][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:02:17][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:02:17][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:02:17][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:02:17][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:02:17][              UpdateBPMaster()] Starting Function
-[11/07/2016 17:02:18][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS' order by T1."CntctCode" 
-[11/07/2016 17:02:18][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 17:02:18][              UpdateBPMaster()] Attempting to Update BP TestAGATS
-[11/07/2016 17:04:32][                         Main'] Starting Function
-[11/07/2016 17:04:32][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:04:32][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:04:32][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:04:32][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:04:32][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:04:43][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:04:43][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:04:43][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:04:51][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:04:51][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:04:51][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:04:51][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:04:51][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:04:51][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:04:51][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:04:51][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:04:51][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:04:51][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:04:51][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:04:51][              UpdateBPMaster()] Starting Function
-[11/07/2016 17:04:51][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS' order by T1."CntctCode" 
-[11/07/2016 17:04:51][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 17:04:51][              UpdateBPMaster()] Attempting to Update BP TestAGATS
-[11/07/2016 17:04:51][              UpdateBPMaster()] Attempting Contact Employees
-[11/07/2016 17:04:51][              UpdateBPMaster()] Updating BP TestAGATS
-[11/07/2016 17:04:52][              UpdateBPMaster()] Completed with SUCCESS
-[11/07/2016 17:04:52][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:04:52][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:04:52][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:04:52][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:04:52][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:04:52][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:04:52][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:04:52][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:04:52][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:04:52][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:04:52][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:04:52][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:11][                         Main'] Starting Function
-[11/07/2016 17:06:11][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:06:11][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:06:11][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:06:11][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:06:11][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:06:22][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:06:22][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:06:22][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:06:30][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:06:30][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:06:30][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:06:30][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:06:30][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:06:30][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:06:30][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:06:30][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:06:30][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:06:30][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:06:30][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:06:30][              UpdateBPMaster()] Starting Function
-[11/07/2016 17:06:31][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS1' order by T1."CntctCode" 
-[11/07/2016 17:06:31][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 17:06:31][              UpdateBPMaster()] Calling Function CreateBPMaster()
-[11/07/2016 17:06:31][              CreateBPMaster()] Starting Function
-[11/07/2016 17:06:31][              CreateBPMaster()] Completed with SUCCESS
-[11/07/2016 17:06:31][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:06:31][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:06:31][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:06:31][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:06:31][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:06:31][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:06:31][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:06:31][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:06:31][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:06:31][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:06:31][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:06:31][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:20][                         Main'] Starting Function
-[11/07/2016 17:08:20][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:08:20][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:08:20][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:08:20][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:08:20][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:08:30][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:08:30][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:08:30][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:08:39][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:08:39][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:08:39][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:08:39][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:08:39][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:08:39][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:08:39][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:08:39][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:08:39][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:08:39][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:08:39][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:08:39][                         Main'] No BPMaster Information for SYNC 
-[11/07/2016 17:08:39][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:08:39][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:08:39][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:08:39][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:08:39][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:08:39][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:08:39][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:08:39][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:08:39][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:08:39][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:08:40][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:08:40][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:08:40][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:08:40][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:08:40][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:08:40][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:08:40][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:08:40][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:09:10][                         Main'] Starting Function
-[11/07/2016 17:09:10][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:09:10][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:09:10][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:09:10][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:09:10][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:09:20][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:09:20][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:09:20][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:09:29][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:09:29][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:09:29][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:09:29][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:09:29][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:09:29][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:09:29][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:09:29][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:09:29][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:09:29][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:09:29][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:09:29][              UpdateBPMaster()] Starting Function
-[11/07/2016 17:09:29][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS1' order by T1."CntctCode" 
-[11/07/2016 17:09:29][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 17:09:29][              UpdateBPMaster()] Calling Function CreateBPMaster()
-[11/07/2016 17:09:29][              CreateBPMaster()] Starting Function
-[11/07/2016 17:11:15][                         Main'] Starting Function
-[11/07/2016 17:11:15][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:11:15][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:11:15][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:11:15][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:11:15][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:11:26][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:11:26][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:11:26][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:11:34][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:11:34][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:11:34][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:11:34][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:11:34][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:11:34][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:11:35][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:11:35][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:11:35][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:11:35][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:11:35][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:11:35][              UpdateBPMaster()] Starting Function
-[11/07/2016 17:11:35][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS1' order by T1."CntctCode" 
-[11/07/2016 17:11:35][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 17:11:35][              UpdateBPMaster()] Calling Function CreateBPMaster()
-[11/07/2016 17:11:35][              CreateBPMaster()] Starting Function
-[11/07/2016 17:11:45][              CreateBPMaster()] Completed with SUCCESS
-[11/07/2016 17:11:45][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:11:45][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:11:45][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:11:45][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:11:45][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:11:45][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:11:45][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:11:45][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:11:45][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:11:45][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:11:45][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:11:45][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:13:56][                         Main'] Starting Function
-[11/07/2016 17:13:56][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:13:56][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:13:56][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:13:56][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:13:56][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:14:08][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:14:08][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:14:08][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:14:16][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:14:16][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:14:16][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:14:16][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:14:16][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:14:16][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:14:16][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:14:16][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:14:16][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:14:16][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:14:16][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:14:16][              UpdateBPMaster()] Starting Function
-[11/07/2016 17:14:16][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS1' order by T1."CntctCode" 
-[11/07/2016 17:14:16][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 17:14:16][              UpdateBPMaster()] Calling Function CreateBPMaster()
-[11/07/2016 17:14:16][              CreateBPMaster()] Starting Function
-[11/07/2016 17:14:17][              CreateBPMaster()] Completed with SUCCESS
-[11/07/2016 17:14:17][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:14:17][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:14:17][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:14:17][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:14:17][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:14:17][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:14:17][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:14:17][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:14:17][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:14:17][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:14:17][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:14:17][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:04][                         Main'] Starting Function
-[11/07/2016 17:15:04][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:15:04][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:15:04][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:15:04][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:15:04][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:15:15][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:15:15][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:15:15][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:15:25][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:15:25][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:15:25][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:15:25][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:15:25][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:15:25][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:15:25][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:15:25][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:15:25][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:15:25][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:15:25][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:15:25][              UpdateBPMaster()] Starting Function
-[11/07/2016 17:15:25][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS1' order by T1."CntctCode" 
-[11/07/2016 17:15:25][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 17:15:25][              UpdateBPMaster()] Attempting to Update BP TestAGATS1
-[11/07/2016 17:15:25][              UpdateBPMaster()] Attempting Contact Employees
-[11/07/2016 17:15:25][              UpdateBPMaster()] Updating BP TestAGATS1
-[11/07/2016 17:15:25][              UpdateBPMaster()] Completed with SUCCESS
-[11/07/2016 17:15:25][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:15:25][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:15:25][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:15:25][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:15:25][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:15:25][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:15:25][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:15:25][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:15:25][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:25][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:25][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:15:25][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:15:25][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:15:25][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:15:26][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:15:26][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:15:26][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:15:26][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:15:26][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:15:26][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:15:26][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:15:26][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:15:26][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:15:26][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:32][                         Main'] Starting Function
-[11/07/2016 17:16:32][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:16:32][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:16:32][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:16:32][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:16:32][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:16:44][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:16:44][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:16:44][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:16:52][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:16:52][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:16:52][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:16:52][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:16:52][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:16:52][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:16:52][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:16:52][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:16:52][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:16:52][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:16:52][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:16:52][              UpdateBPMaster()] Starting Function
-[11/07/2016 17:16:53][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS1' order by T1."CntctCode" 
-[11/07/2016 17:16:53][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 17:16:53][              UpdateBPMaster()] Attempting to Update BP TestAGATS1
-[11/07/2016 17:16:53][              UpdateBPMaster()] Attempting Contact Employees
-[11/07/2016 17:16:53][              UpdateBPMaster()] Updating BP TestAGATS1
-[11/07/2016 17:16:53][              UpdateBPMaster()] Completed with SUCCESS
-[11/07/2016 17:16:53][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:16:53][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:16:53][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:16:53][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:16:53][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:16:53][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:16:53][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:16:53][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:16:53][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:16:53][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:16:53][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:16:54][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:16:54][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:17:48][                         Main'] Starting Function
-[11/07/2016 17:17:48][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:17:48][      GetSystemIntializeInfo()] Starting Function
-[11/07/2016 17:17:48][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/07/2016 17:17:48][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/07/2016 17:17:48][                         Main'] Calling Function ConnectToCompany()
-[11/07/2016 17:17:59][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/07/2016 17:17:59][                         Main'] Source Connected SUCCESSFULLY 
-[11/07/2016 17:17:59][                         Main'] Calling Function ConnectToTargetCompany()
-[11/07/2016 17:18:08][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/07/2016 17:18:08][                         Main'] Target Connected SUCCESSFULLY 
-[11/07/2016 17:18:08][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:18:08][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:18:08][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:18:08][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:18:08][                         Main'] No ItemMaster Information for SYNC 
-[11/07/2016 17:18:08][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:18:08][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:18:08][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:18:08][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:18:08][              UpdateBPMaster()] Starting Function
-[11/07/2016 17:18:08][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='TestAGATS1' order by T1."CntctCode" 
-[11/07/2016 17:18:08][              UpdateBPMaster()] Conected with Company GLINKTEST
-[11/07/2016 17:18:08][              UpdateBPMaster()] Calling Function CreateBPMaster()
-[11/07/2016 17:18:08][              CreateBPMaster()] Starting Function
-[11/07/2016 17:18:08][              CreateBPMaster()] Completed with SUCCESS
-[11/07/2016 17:18:08][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/07/2016 17:18:08][                         Main'] Calling HANAtoDatatable() 
-[11/07/2016 17:18:08][             HANAtoDatatable()] HANA Connection
-[11/07/2016 17:18:08][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:18:08][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:18:08][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:18:08][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:18:08][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:18:08][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:18:08][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:08][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:18:09][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:18:09][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:18:09][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:18:09][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Starting Function
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/07/2016 17:18:09][           CreateBPPriceList()] Starting Function
-[11/07/2016 17:18:09][           CreateBPPriceList()] Completed with ERROR
-[11/07/2016 17:18:09][           UpdateBPPriceList()] Completed with ERROR
-[11/08/2016 11:00:06][                         Main'] Starting Function
-[11/08/2016 11:00:06][      GetSystemIntializeInfo()] Starting Function
-[11/08/2016 11:00:06][      GetSystemIntializeInfo()] Starting Function
-[11/08/2016 11:00:06][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/08/2016 11:00:06][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/08/2016 11:00:06][                         Main'] Calling Function ConnectToCompany()
-[11/08/2016 11:00:16][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/08/2016 11:00:16][                         Main'] Source Connected SUCCESSFULLY 
-[11/08/2016 11:00:16][                         Main'] Calling Function ConnectToTargetCompany()
-[11/08/2016 11:00:25][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/08/2016 11:00:25][                         Main'] Target Connected SUCCESSFULLY 
-[11/08/2016 11:00:25][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/08/2016 11:00:25][                         Main'] Calling HANAtoDatatable() 
-[11/08/2016 11:00:25][             HANAtoDatatable()] HANA Connection
-[11/08/2016 11:00:25][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/08/2016 11:00:25][                         Main'] No ItemMaster Information for SYNC 
-[11/08/2016 11:00:25][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/08/2016 11:00:25][                         Main'] Calling HANAtoDatatable() 
-[11/08/2016 11:00:25][             HANAtoDatatable()] HANA Connection
-[11/08/2016 11:00:25][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/08/2016 11:00:25][                         Main'] No BPMaster Information for SYNC 
-[11/08/2016 11:00:25][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/08/2016 11:00:25][                         Main'] Calling HANAtoDatatable() 
-[11/08/2016 11:00:25][             HANAtoDatatable()] HANA Connection
-[11/08/2016 11:00:25][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/08/2016 11:00:25][           UpdateBPPriceList()] Starting Function
-[11/08/2016 11:00:25][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/08/2016 11:00:25][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/08/2016 11:00:25][           CreateBPPriceList()] Starting Function
-[11/08/2016 11:00:25][           CreateBPPriceList()] Completed with ERROR
-[11/08/2016 11:00:25][           UpdateBPPriceList()] Completed with ERROR
-[11/08/2016 11:00:25][           UpdateBPPriceList()] Starting Function
-[11/08/2016 11:00:25][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/08/2016 11:05:38][                         Main'] Starting Function
-[11/08/2016 11:05:38][      GetSystemIntializeInfo()] Starting Function
-[11/08/2016 11:05:38][      GetSystemIntializeInfo()] Starting Function
-[11/08/2016 11:05:38][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/08/2016 11:05:38][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/08/2016 11:05:38][                         Main'] Calling Function ConnectToCompany()
-[11/08/2016 11:05:49][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/08/2016 11:05:49][                         Main'] Source Connected SUCCESSFULLY 
-[11/08/2016 11:05:49][                         Main'] Calling Function ConnectToTargetCompany()
-[11/08/2016 11:05:58][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/08/2016 11:05:58][                         Main'] Target Connected SUCCESSFULLY 
-[11/08/2016 11:05:58][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/08/2016 11:05:58][                         Main'] Calling HANAtoDatatable() 
-[11/08/2016 11:05:58][             HANAtoDatatable()] HANA Connection
-[11/08/2016 11:05:58][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/08/2016 11:05:58][                         Main'] No ItemMaster Information for SYNC 
-[11/08/2016 11:05:58][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/08/2016 11:05:58][                         Main'] Calling HANAtoDatatable() 
-[11/08/2016 11:05:58][             HANAtoDatatable()] HANA Connection
-[11/08/2016 11:05:58][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/08/2016 11:05:58][                         Main'] No BPMaster Information for SYNC 
-[11/08/2016 11:05:58][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/08/2016 11:05:58][                         Main'] Calling HANAtoDatatable() 
-[11/08/2016 11:05:58][             HANAtoDatatable()] HANA Connection
-[11/08/2016 11:05:58][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/08/2016 11:05:58][           UpdateBPPriceList()] Starting Function
-[11/08/2016 11:05:58][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/08/2016 11:05:58][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/08/2016 11:05:58][           CreateBPPriceList()] Starting Function
-[11/08/2016 11:05:58][           CreateBPPriceList()] Completed with ERROR
-[11/08/2016 11:05:58][           UpdateBPPriceList()] Completed with ERROR
-[11/08/2016 11:05:58][           UpdateBPPriceList()] Starting Function
-[11/08/2016 11:05:58][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/08/2016 11:08:16][                         Main'] Starting Function
-[11/08/2016 11:08:16][      GetSystemIntializeInfo()] Starting Function
-[11/08/2016 11:08:16][      GetSystemIntializeInfo()] Starting Function
-[11/08/2016 11:08:16][      GetSystemIntializeInfo()] Completed with SUCCESS
-[11/08/2016 11:08:16][                         Main'] App DETRONICS_BAK2;GLINKTEST;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[11/08/2016 11:08:16][                         Main'] Calling Function ConnectToCompany()
-[11/08/2016 11:08:27][            ConnectToCompany()] Source Company connected  successfully DETRONICS_BAK2
-[11/08/2016 11:08:27][                         Main'] Source Connected SUCCESSFULLY 
-[11/08/2016 11:08:27][                         Main'] Calling Function ConnectToTargetCompany()
-[11/08/2016 11:08:35][            ConnectToCompany()] Target Company connected  successfully GLINKTEST
-[11/08/2016 11:08:35][                         Main'] Target Connected SUCCESSFULLY 
-[11/08/2016 11:08:35][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/08/2016 11:08:35][                         Main'] Calling HANAtoDatatable() 
-[11/08/2016 11:08:35][             HANAtoDatatable()] HANA Connection
-[11/08/2016 11:08:35][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/08/2016 11:08:36][                         Main'] No ItemMaster Information for SYNC 
-[11/08/2016 11:08:36][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/08/2016 11:08:36][                         Main'] Calling HANAtoDatatable() 
-[11/08/2016 11:08:36][             HANAtoDatatable()] HANA Connection
-[11/08/2016 11:08:36][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/08/2016 11:08:36][                         Main'] No BPMaster Information for SYNC 
-[11/08/2016 11:08:36][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[11/08/2016 11:08:36][                         Main'] Calling HANAtoDatatable() 
-[11/08/2016 11:08:36][             HANAtoDatatable()] HANA Connection
-[11/08/2016 11:08:36][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[11/08/2016 11:08:36][           UpdateBPPriceList()] Starting Function
-[11/08/2016 11:08:36][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[11/08/2016 11:08:36][           UpdateBPPriceList()] Calling Function CreateBPPriceList()
-[11/08/2016 11:08:36][           CreateBPPriceList()] Starting Function
-[11/08/2016 11:08:36][           CreateBPPriceList()] Completed with ERROR
-[11/08/2016 11:08:36][           UpdateBPPriceList()] Completed with ERROR
-[11/08/2016 11:08:36][           UpdateBPPriceList()] Starting Function
-[11/08/2016 11:08:36][           UpdateBPPriceList()] Conected with target Company GLINKTEST
-[01/02/2017 17:39:47][                         Main'] Starting Function
-[01/02/2017 17:39:47][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 17:39:47][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 17:39:47][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 17:39:47][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 17:39:47][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 17:39:51][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 17:39:51][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 17:39:51][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 17:39:54][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 17:39:54][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 17:39:54][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 17:39:54][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 17:39:55][             HANAtoDatatable()] HANA Connection
-[01/02/2017 17:39:55][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 17:39:55][            UpdateItemMaster()] Starting Function
-[01/02/2017 17:40:06][            UpdateItemMaster()] Error: ItemCode not found!!!!
-[01/02/2017 17:40:24][                         Main'] Starting Function
-[01/02/2017 17:40:24][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 17:40:24][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 17:40:24][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 17:40:24][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 17:40:24][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 17:40:29][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 17:40:29][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 17:40:29][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 17:40:31][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 17:40:31][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 17:40:31][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 17:40:31][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 17:40:31][             HANAtoDatatable()] HANA Connection
-[01/02/2017 17:40:31][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 17:40:31][            UpdateItemMaster()] Starting Function
-[01/02/2017 18:00:47][                         Main'] Starting Function
-[01/02/2017 18:00:47][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:00:47][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:00:47][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 18:00:47][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 18:00:47][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 18:00:51][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 18:00:51][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 18:00:51][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 18:00:53][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 18:00:53][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 18:00:53][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 18:00:53][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 18:00:53][             HANAtoDatatable()] HANA Connection
-[01/02/2017 18:00:53][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 18:00:53][            UpdateItemMaster()] Starting Function
-[01/02/2017 18:01:02][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 18:02:29][            UpdateItemMaster()] Updating ItemCode BAN 20276 BIOS-D-2825P(4500)
-[01/02/2017 18:06:35][                         Main'] Starting Function
-[01/02/2017 18:06:35][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:06:35][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:06:35][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 18:06:35][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 18:06:35][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 18:06:39][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 18:06:39][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 18:06:39][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 18:06:41][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 18:06:41][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 18:06:41][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 18:06:41][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 18:06:41][             HANAtoDatatable()] HANA Connection
-[01/02/2017 18:06:41][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 18:06:42][            UpdateItemMaster()] Starting Function
-[01/02/2017 18:06:47][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 18:07:25][            UpdateItemMaster()] Updating ItemCode BAN 20276 BIOS-D-2825P(4500)
-[01/02/2017 18:14:05][                         Main'] Starting Function
-[01/02/2017 18:14:05][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:14:05][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:14:05][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 18:14:05][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 18:14:05][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 18:14:10][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 18:14:10][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 18:14:10][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 18:14:12][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 18:14:12][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 18:14:12][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 18:14:12][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 18:14:12][             HANAtoDatatable()] HANA Connection
-[01/02/2017 18:14:12][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 18:14:12][            UpdateItemMaster()] Starting Function
-[01/02/2017 18:14:31][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 18:15:21][            UpdateItemMaster()] Updating ItemCode BAN 20276 BIOS-D-2825P(4500)
-[01/02/2017 18:19:07][                         Main'] Starting Function
-[01/02/2017 18:19:07][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:19:07][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:19:07][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 18:19:07][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 18:19:07][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 18:19:12][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 18:19:12][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 18:19:12][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 18:19:15][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 18:19:15][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 18:19:15][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 18:19:15][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 18:19:15][             HANAtoDatatable()] HANA Connection
-[01/02/2017 18:19:15][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 18:19:15][            UpdateItemMaster()] Starting Function
-[01/02/2017 18:19:25][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 18:19:29][            UpdateItemMaster()] Updating ItemCode BAN 20276 BIOS-D-2825P(4500)
-[01/02/2017 18:40:10][                         Main'] Starting Function
-[01/02/2017 18:40:10][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:40:10][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 18:40:10][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 18:40:11][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 18:40:11][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 18:40:15][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 18:40:15][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 18:40:15][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 18:40:17][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 18:40:17][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 18:40:17][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 18:40:17][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 18:40:17][             HANAtoDatatable()] HANA Connection
-[01/02/2017 18:40:17][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 18:40:17][            UpdateItemMaster()] Starting Function
-[01/02/2017 18:40:28][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 18:40:39][            UpdateItemMaster()] Updating ItemCode BAN 20276 BIOS-D-2825P(4500)
-[01/02/2017 18:42:14][            UpdateItemMaster()] Completed with SUCCESS
-[01/02/2017 22:59:05][                         Main'] Starting Function
-[01/02/2017 22:59:05][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 22:59:05][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 22:59:05][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 22:59:05][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 22:59:05][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 22:59:08][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 22:59:08][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 22:59:08][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 22:59:10][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 22:59:10][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 22:59:10][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 22:59:10][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 22:59:10][             HANAtoDatatable()] HANA Connection
-[01/02/2017 22:59:10][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 22:59:10][            UpdateItemMaster()] Starting Function
-[01/02/2017 23:00:17][                         Main'] Starting Function
-[01/02/2017 23:00:17][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:00:17][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:00:17][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 23:00:17][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 23:00:17][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 23:00:21][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 23:00:21][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 23:00:21][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 23:00:22][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 23:00:22][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 23:00:22][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:00:22][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:00:22][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:00:22][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:00:23][            UpdateItemMaster()] Starting Function
-[01/02/2017 23:00:23][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 23:00:23][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/02/2017 23:00:24][            UpdateItemMaster()] Completed with ERROR
-[01/02/2017 23:00:24][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:00:24][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:00:24][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:00:24][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:00:24][                         Main'] No BPMaster Information for SYNC 
-[01/02/2017 23:00:24][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:00:24][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:00:24][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:00:24][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:00:24][                         Main'] No BP Price List Information for Synchronization 
-[01/02/2017 23:05:24][                         Main'] Starting Function
-[01/02/2017 23:05:24][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:05:24][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:05:25][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 23:05:25][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 23:05:25][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 23:05:28][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 23:05:28][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 23:05:28][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 23:05:29][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 23:05:29][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 23:05:29][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:05:29][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:05:29][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:05:29][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:05:29][            UpdateItemMaster()] Starting Function
-[01/02/2017 23:05:29][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 23:05:29][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/02/2017 23:05:30][            UpdateItemMaster()] Completed with ERROR
-[01/02/2017 23:05:30][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:05:30][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:05:30][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:05:30][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:05:30][                         Main'] No BPMaster Information for SYNC 
-[01/02/2017 23:05:30][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:05:30][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:05:30][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:05:30][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:05:30][                         Main'] No BP Price List Information for Synchronization 
-[01/02/2017 23:06:28][                         Main'] Starting Function
-[01/02/2017 23:06:28][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:06:28][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:06:29][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 23:06:29][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 23:06:29][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 23:06:33][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 23:06:33][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 23:06:33][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 23:06:34][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 23:06:34][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 23:06:34][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:06:34][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:06:34][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:06:35][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:06:35][            UpdateItemMaster()] Starting Function
-[01/02/2017 23:06:43][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 23:07:06][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/02/2017 23:07:39][                         Main'] Starting Function
-[01/02/2017 23:07:39][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:07:39][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:07:39][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 23:07:39][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 23:07:39][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 23:07:42][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 23:07:42][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 23:07:42][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 23:07:43][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 23:07:43][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 23:07:43][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:07:43][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:07:44][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:07:44][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:07:44][            UpdateItemMaster()] Starting Function
-[01/02/2017 23:07:48][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 23:07:57][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/02/2017 23:10:44][                         Main'] Starting Function
-[01/02/2017 23:10:44][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:10:44][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:10:44][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 23:10:44][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 23:10:44][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 23:10:47][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 23:10:47][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 23:10:47][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 23:10:49][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 23:10:49][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 23:10:49][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:10:49][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:10:49][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:10:49][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:10:49][            UpdateItemMaster()] Starting Function
-[01/02/2017 23:10:55][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 23:11:40][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/02/2017 23:16:33][                         Main'] Starting Function
-[01/02/2017 23:16:33][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:16:33][      GetSystemIntializeInfo()] Starting Function
-[01/02/2017 23:16:33][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/02/2017 23:16:33][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/02/2017 23:16:33][                         Main'] Calling Function ConnectToCompany()
-[01/02/2017 23:16:36][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/02/2017 23:16:36][                         Main'] Source Connected SUCCESSFULLY 
-[01/02/2017 23:16:36][                         Main'] Calling Function ConnectToTargetCompany()
-[01/02/2017 23:16:38][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/02/2017 23:16:38][                         Main'] Target Connected SUCCESSFULLY 
-[01/02/2017 23:16:38][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/02/2017 23:16:38][                         Main'] Calling HANAtoDatatable() 
-[01/02/2017 23:16:38][             HANAtoDatatable()] HANA Connection
-[01/02/2017 23:16:38][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/02/2017 23:16:38][            UpdateItemMaster()] Starting Function
-[01/02/2017 23:16:42][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/02/2017 23:17:33][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/03/2017 10:51:35][                         Main'] Starting Function
-[01/03/2017 10:51:35][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 10:51:35][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 10:51:35][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 10:51:35][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 10:51:35][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 10:51:38][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 10:51:38][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 10:51:38][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 10:51:40][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 10:51:40][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 10:51:40][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 10:51:40][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 10:51:40][             HANAtoDatatable()] HANA Connection
-[01/03/2017 10:51:40][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 10:51:40][            UpdateItemMaster()] Starting Function
-[01/03/2017 10:51:55][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 10:53:12][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/03/2017 11:06:42][                         Main'] Starting Function
-[01/03/2017 11:06:42][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:06:42][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:06:42][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:06:42][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:06:42][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:06:45][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:06:45][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:06:45][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:06:47][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:06:47][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:06:47][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:06:47][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:06:47][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:06:47][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:06:47][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:06:47][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:07:11][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/03/2017 11:19:31][                         Main'] Starting Function
-[01/03/2017 11:19:31][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:19:31][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:19:31][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:19:31][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:19:31][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:19:35][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:19:35][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:19:35][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:19:37][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:19:37][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:19:37][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:19:37][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:19:37][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:19:37][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:19:37][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:19:37][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:19:49][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/03/2017 11:20:08][            UpdateItemMaster()] Completed with SUCCESS
-[01/03/2017 11:20:08][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:20:09][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:21:38][                         Main'] Starting Function
-[01/03/2017 11:21:38][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:21:38][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:21:38][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:21:38][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:21:38][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:21:42][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:21:42][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:21:42][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:21:44][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:21:44][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:21:44][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:21:44][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:21:44][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:21:44][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:21:44][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:21:44][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:22:02][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/03/2017 11:22:06][            UpdateItemMaster()] Completed with SUCCESS
-[01/03/2017 11:22:06][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:22:06][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:23:04][                         Main'] Starting Function
-[01/03/2017 11:23:04][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:23:04][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:23:04][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:23:04][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:23:04][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:23:09][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:23:09][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:23:09][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:23:11][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:23:11][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:23:11][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:23:11][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:23:11][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:23:11][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:23:11][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:23:11][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:23:30][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/03/2017 11:24:13][                         Main'] Starting Function
-[01/03/2017 11:24:13][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:24:13][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:24:13][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:24:13][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:24:13][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:24:18][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:24:18][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:24:18][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:24:19][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:24:19][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:24:19][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:24:19][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:24:20][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:24:20][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:24:20][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:24:20][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:24:45][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/03/2017 11:43:53][                         Main'] Starting Function
-[01/03/2017 11:43:54][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:43:54][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:43:54][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:43:54][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:43:54][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:43:57][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:43:57][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:43:57][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:43:59][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:43:59][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:43:59][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:43:59][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:43:59][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:43:59][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:43:59][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:43:59][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:44:54][                         Main'] Starting Function
-[01/03/2017 11:44:54][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:44:54][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:44:54][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:44:54][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:44:54][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:44:57][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:44:57][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:44:57][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:44:59][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:44:59][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:44:59][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:44:59][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:44:59][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:45:00][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:45:00][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:45:00][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:45:33][                         Main'] Starting Function
-[01/03/2017 11:45:33][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:45:33][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:45:33][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:45:33][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:45:33][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:45:37][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:45:37][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:45:37][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:45:38][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:45:38][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:45:38][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:45:38][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:45:38][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:45:38][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:45:38][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:45:39][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:48:57][                         Main'] Starting Function
-[01/03/2017 11:48:57][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:48:57][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:48:57][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:48:57][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:48:57][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:49:00][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:49:00][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:49:00][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:49:02][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:49:02][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:49:02][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:49:02][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:49:02][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:49:02][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:49:02][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:49:02][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:49:21][            UpdateItemMaster()] Completed with ERROR
-[01/03/2017 11:49:22][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:49:22][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:50:11][                         Main'] Starting Function
-[01/03/2017 11:50:11][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:50:11][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 11:50:11][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 11:50:11][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 11:50:11][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 11:50:14][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 11:50:14][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 11:50:14][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 11:50:16][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 11:50:16][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 11:50:16][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 11:50:16][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 11:50:16][             HANAtoDatatable()] HANA Connection
-[01/03/2017 11:50:16][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 11:50:16][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:50:16][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 11:50:37][            UpdateItemMaster()] Updating ItemCode RAY 5069854021
-[01/03/2017 11:50:41][            UpdateItemMaster()] Completed with SUCCESS
-[01/03/2017 11:50:43][            UpdateItemMaster()] Starting Function
-[01/03/2017 11:50:43][            UpdateItemMaster()] Conected with target Company GLINKLIVE
-[01/03/2017 12:55:37][                         Main'] Starting Function
-[01/03/2017 12:55:37][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 12:55:37][      GetSystemIntializeInfo()] Starting Function
-[01/03/2017 12:55:37][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/03/2017 12:55:37][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/03/2017 12:55:37][                         Main'] Calling Function ConnectToCompany()
-[01/03/2017 12:55:40][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/03/2017 12:55:40][                         Main'] Source Connected SUCCESSFULLY 
-[01/03/2017 12:55:40][                         Main'] Calling Function ConnectToTargetCompany()
-[01/03/2017 12:55:42][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/03/2017 12:55:42][                         Main'] Target Connected SUCCESSFULLY 
-[01/03/2017 12:55:42][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/03/2017 12:55:42][                         Main'] Calling HANAtoDatatable() 
-[01/03/2017 12:55:42][             HANAtoDatatable()] HANA Connection
-[01/03/2017 12:55:42][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/03/2017 12:55:42][            UpdateItemMaster()] Starting Function
-[01/03/2017 12:56:09][            UpdateItemMaster()] Error: ItemCode not found!!!!
-[01/04/2017 16:50:42][                         Main'] Starting Function
-[01/04/2017 16:50:42][      GetSystemIntializeInfo()] Starting Function
-[01/04/2017 16:50:42][      GetSystemIntializeInfo()] Starting Function
-[01/04/2017 16:50:42][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/04/2017 16:50:42][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/04/2017 16:50:42][                         Main'] Calling Function ConnectToCompany()
-[01/04/2017 16:50:46][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/04/2017 16:50:46][                         Main'] Source Connected SUCCESSFULLY 
-[01/04/2017 16:50:46][                         Main'] Calling Function ConnectToTargetCompany()
-[01/04/2017 16:50:48][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/04/2017 16:50:48][                         Main'] Target Connected SUCCESSFULLY 
-[01/04/2017 16:50:48][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/04/2017 16:50:48][                         Main'] Calling HANAtoDatatable() 
-[01/04/2017 16:53:14][                         Main'] Starting Function
-[01/04/2017 16:53:14][      GetSystemIntializeInfo()] Starting Function
-[01/04/2017 16:53:14][      GetSystemIntializeInfo()] Starting Function
-[01/04/2017 16:53:14][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/04/2017 16:53:14][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/04/2017 16:53:14][                         Main'] Calling Function ConnectToCompany()
-[01/04/2017 16:53:19][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/04/2017 16:53:19][                         Main'] Source Connected SUCCESSFULLY 
-[01/04/2017 16:53:19][                         Main'] Calling Function ConnectToTargetCompany()
-[01/04/2017 16:53:20][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/04/2017 16:53:20][                         Main'] Target Connected SUCCESSFULLY 
-[01/04/2017 16:53:20][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/04/2017 16:53:20][                         Main'] Calling HANAtoDatatable() 
-[01/04/2017 16:53:20][             HANAtoDatatable()] HANA Connection
-[01/04/2017 16:53:20][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/04/2017 16:53:20][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/04/2017 16:53:20][                         Main'] Calling HANAtoDatatable() 
-[01/04/2017 16:53:20][             HANAtoDatatable()] HANA Connection
-[01/04/2017 16:53:20][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/04/2017 16:53:20][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/04/2017 16:53:20][                         Main'] Calling HANAtoDatatable() 
-[01/04/2017 16:53:20][             HANAtoDatatable()] HANA Connection
-[01/04/2017 16:53:20][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/04/2017 16:53:20][           UpdateBPPriceList()] Starting Function
-[01/04/2017 16:53:29][           UpdateBPPriceList()] Conected with target Company GLINKLIVE
-[01/04/2017 16:53:56][                         Main'] Starting Function
-[01/04/2017 16:53:56][      GetSystemIntializeInfo()] Starting Function
-[01/04/2017 16:53:56][      GetSystemIntializeInfo()] Starting Function
-[01/04/2017 16:53:56][      GetSystemIntializeInfo()] Completed with SUCCESS
-[01/04/2017 16:53:56][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
-[01/04/2017 16:53:56][                         Main'] Calling Function ConnectToCompany()
-[01/04/2017 16:54:00][            ConnectToCompany()] Source Company connected  successfully DETLIV
-[01/04/2017 16:54:00][                         Main'] Source Connected SUCCESSFULLY 
-[01/04/2017 16:54:00][                         Main'] Calling Function ConnectToTargetCompany()
-[01/04/2017 16:54:01][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
-[01/04/2017 16:54:01][                         Main'] Target Connected SUCCESSFULLY 
-[01/04/2017 16:54:01][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/04/2017 16:54:01][                         Main'] Calling HANAtoDatatable() 
-[01/04/2017 16:54:01][             HANAtoDatatable()] HANA Connection
-[01/04/2017 16:54:01][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/04/2017 16:54:01][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/04/2017 16:54:01][                         Main'] Calling HANAtoDatatable() 
-[01/04/2017 16:54:01][             HANAtoDatatable()] HANA Connection
-[01/04/2017 16:54:01][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/04/2017 16:54:01][                         Main'] BP Price List  SYNC SELECT T0."Code", T0."Name", T0."BPCode", T0."ItemCode" FROM "AE_BP_PRICE_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
-[01/04/2017 16:54:01][                         Main'] Calling HANAtoDatatable() 
-[01/04/2017 16:54:01][             HANAtoDatatable()] HANA Connection
-[01/04/2017 16:54:01][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
-[01/04/2017 16:54:02][           UpdateBPPriceList()] Starting Function
-[01/04/2017 16:54:08][           UpdateBPPriceList()] Conected with target Company GLINKLIVE
-[01/04/2017 16:54:17][           UpdateBPPriceList()] Updating BP Price list VGL_MANSI-USD
-[01/04/2017 16:54:18][           UpdateBPPriceList()] Completed with SUCCESS
-[01/04/2017 16:54:18][           UpdateBPPriceList()] Starting Function
+[02/13/2017 18:55:18][                         Main'] Starting Function
+[02/13/2017 18:55:18][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 18:55:18][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 18:55:18][      GetSystemIntializeInfo()] Completed with SUCCESS
+[02/13/2017 18:55:18][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
+[02/13/2017 18:55:18][                         Main'] Calling Function ConnectToCompany()
+[02/13/2017 18:56:05][            ConnectToCompany()] Source Company connected  successfully DETLIV
+[02/13/2017 18:56:05][                         Main'] Source Connected SUCCESSFULLY 
+[02/13/2017 18:56:05][                         Main'] Calling Function ConnectToTargetCompany()
+[02/13/2017 18:56:07][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
+[02/13/2017 18:56:07][                         Main'] Target Connected SUCCESSFULLY 
+[02/13/2017 18:56:07][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/13/2017 18:56:07][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 18:56:09][             HANAtoDatatable()] HANA Connection
+[02/13/2017 18:56:09][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 18:56:10][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:10][            UpdateItemMaster()] Error: ItemCode not found!!!!
+[02/13/2017 18:56:10][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:10][            UpdateItemMaster()] Error: ItemCode not found!!!!
+[02/13/2017 18:56:10][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:10][            UpdateItemMaster()] Error: ItemCode not found!!!!
+[02/13/2017 18:56:10][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:10][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:10][            UpdateItemMaster()] Updating ItemCode SEI UL3265(B28)-22(STR)17/0.16(5001) BLK
+[02/13/2017 18:56:11][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:11][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:11][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:12][            UpdateItemMaster()] Updating ItemCode SEI UL3265(B28)-22(STR)17/0.16(5001) BLU
+[02/13/2017 18:56:12][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:12][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:12][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:12][            UpdateItemMaster()] Updating ItemCode SEI UL3265(B28)-22(STR)17/0.16(5001) GRN
+[02/13/2017 18:56:12][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:12][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:12][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:12][            UpdateItemMaster()] Updating ItemCode SEI UL3265(B28)-24(STR)11/0.160(5001) RED
+[02/13/2017 18:56:13][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:13][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:13][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:13][            UpdateItemMaster()] Updating ItemCode SEI UL1007LF-24(STR)11/0.16(5001) GRN
+[02/13/2017 18:56:13][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:13][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:13][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:13][            UpdateItemMaster()] Updating ItemCode SEI UL1007LF-24(STR)11/0.16(5001) YLW
+[02/13/2017 18:56:13][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:13][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:13][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:13][            UpdateItemMaster()] Updating ItemCode SEI UL1571LF-30(STR)7/0.10 P130(5001) BLK
+[02/13/2017 18:56:14][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:14][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:14][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:14][            UpdateItemMaster()] Updating ItemCode SEI UL1571LF-30(STR)7/0.10 P130(5001) GRN
+[02/13/2017 18:56:14][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:14][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:14][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:14][            UpdateItemMaster()] Updating ItemCode SEI UL1571LF-30(STR)7/0.10 P130(5001) RED
+[02/13/2017 18:56:14][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:14][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:14][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:15][            UpdateItemMaster()] Updating ItemCode SEI UL3443LF-26(STR)7/0.16 P300(5501) YLW
+[02/13/2017 18:56:15][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:15][            UpdateItemMaster()] Starting Function
+[02/13/2017 18:56:15][            UpdateItemMaster()] Conected with target Company GLINKLIVE
+[02/13/2017 18:56:15][            UpdateItemMaster()] Updating ItemCode TE 1-172131-1
+[02/13/2017 18:56:15][            UpdateItemMaster()] Completed with SUCCESS
+[02/13/2017 18:56:15][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/13/2017 18:56:15][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 18:56:15][             HANAtoDatatable()] HANA Connection
+[02/13/2017 18:56:15][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:03:32][                         Main'] Starting Function
+[02/13/2017 19:03:33][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:03:33][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:03:33][      GetSystemIntializeInfo()] Completed with SUCCESS
+[02/13/2017 19:03:33][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
+[02/13/2017 19:03:33][                         Main'] Calling Function ConnectToCompany()
+[02/13/2017 19:03:37][            ConnectToCompany()] Source Company connected  successfully DETLIV
+[02/13/2017 19:03:37][                         Main'] Source Connected SUCCESSFULLY 
+[02/13/2017 19:03:37][                         Main'] Calling Function ConnectToTargetCompany()
+[02/13/2017 19:03:38][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
+[02/13/2017 19:03:38][                         Main'] Target Connected SUCCESSFULLY 
+[02/13/2017 19:03:38][                         Main'] ITEM  SYNC 
+[02/13/2017 19:03:38][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:03:38][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:03:38][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:03:39][             HANAtoDatatable()] Error in HANA Connection/Query passed..........
+[02/13/2017 19:03:39][                         Main'] Item Master Sync Completed with ERROR
+[02/13/2017 19:03:39][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/13/2017 19:03:39][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:03:39][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:03:39][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:03:39][                         Main'] BP Master Sync Completed with ERROR
+[02/13/2017 19:03:39][                         Main'] BP Price List  SYNC 
+[02/13/2017 19:03:39][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:03:39][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:03:39][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:03:39][             HANAtoDatatable()] Error in HANA Connection/Query passed..........
+[02/13/2017 19:03:39][                         Main'] BP Price List Sync Completed with ERROR
+[02/13/2017 19:04:07][                         Main'] Starting Function
+[02/13/2017 19:04:07][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:04:07][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:04:07][      GetSystemIntializeInfo()] Completed with SUCCESS
+[02/13/2017 19:04:07][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
+[02/13/2017 19:04:07][                         Main'] Calling Function ConnectToCompany()
+[02/13/2017 19:04:12][            ConnectToCompany()] Source Company connected  successfully DETLIV
+[02/13/2017 19:04:12][                         Main'] Source Connected SUCCESSFULLY 
+[02/13/2017 19:04:12][                         Main'] Calling Function ConnectToTargetCompany()
+[02/13/2017 19:04:13][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
+[02/13/2017 19:04:13][                         Main'] Target Connected SUCCESSFULLY 
+[02/13/2017 19:04:13][                         Main'] ITEM  SYNC 
+[02/13/2017 19:04:13][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:04:13][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:04:13][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:04:13][             HANAtoDatatable()] Error in HANA Connection/Query passed..........
+[02/13/2017 19:04:13][                         Main'] Item Master Sync Completed with ERROR
+[02/13/2017 19:04:46][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/13/2017 19:04:47][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:04:49][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:04:49][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:06:01][                         Main'] Starting Function
+[02/13/2017 19:06:01][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:06:01][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:06:01][      GetSystemIntializeInfo()] Completed with SUCCESS
+[02/13/2017 19:06:01][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
+[02/13/2017 19:06:01][                         Main'] Calling Function ConnectToCompany()
+[02/13/2017 19:06:05][            ConnectToCompany()] Source Company connected  successfully DETLIV
+[02/13/2017 19:06:05][                         Main'] Source Connected SUCCESSFULLY 
+[02/13/2017 19:06:05][                         Main'] Calling Function ConnectToTargetCompany()
+[02/13/2017 19:06:07][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
+[02/13/2017 19:06:07][                         Main'] Target Connected SUCCESSFULLY 
+[02/13/2017 19:06:07][                         Main'] ITEM  SYNC 
+[02/13/2017 19:06:07][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:06:07][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:06:07][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:06:07][             HANAtoDatatable()] Error in HANA Connection/Query passed..........
+[02/13/2017 19:06:07][                         Main'] Item Master Sync Completed with ERROR
+[02/13/2017 19:06:15][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/13/2017 19:06:17][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:06:18][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:06:18][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:08:03][                         Main'] Starting Function
+[02/13/2017 19:08:03][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:08:03][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:08:03][      GetSystemIntializeInfo()] Completed with SUCCESS
+[02/13/2017 19:08:03][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
+[02/13/2017 19:08:03][                         Main'] Calling Function ConnectToCompany()
+[02/13/2017 19:08:08][            ConnectToCompany()] Source Company connected  successfully DETLIV
+[02/13/2017 19:08:08][                         Main'] Source Connected SUCCESSFULLY 
+[02/13/2017 19:08:08][                         Main'] Calling Function ConnectToTargetCompany()
+[02/13/2017 19:08:09][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
+[02/13/2017 19:08:09][                         Main'] Target Connected SUCCESSFULLY 
+[02/13/2017 19:08:09][                         Main'] ITEM  SYNC 
+[02/13/2017 19:08:09][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:08:09][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:08:09][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:08:09][             HANAtoDatatable()] Error in HANA Connection/Query passed..........
+[02/13/2017 19:08:09][                         Main'] Item Master Sync Completed with ERROR
+[02/13/2017 19:08:18][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/13/2017 19:08:19][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:08:20][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:08:20][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:09:01][                         Main'] Starting Function
+[02/13/2017 19:09:01][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:09:01][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:09:01][      GetSystemIntializeInfo()] Completed with SUCCESS
+[02/13/2017 19:09:01][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
+[02/13/2017 19:09:01][                         Main'] Calling Function ConnectToCompany()
+[02/13/2017 19:09:07][            ConnectToCompany()] Source Company connected  successfully DETLIV
+[02/13/2017 19:09:07][                         Main'] Source Connected SUCCESSFULLY 
+[02/13/2017 19:09:07][                         Main'] Calling Function ConnectToTargetCompany()
+[02/13/2017 19:09:08][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
+[02/13/2017 19:09:08][                         Main'] Target Connected SUCCESSFULLY 
+[02/13/2017 19:09:08][                         Main'] ITEM  SYNC 
+[02/13/2017 19:09:08][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:09:08][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:09:08][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:09:09][             HANAtoDatatable()] Error in HANA Connection/Query passed..........
+[02/13/2017 19:09:09][                         Main'] Item Master Sync Completed with ERROR
+[02/13/2017 19:09:12][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/13/2017 19:09:13][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:09:15][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:09:15][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:09:40][              UpdateBPMaster()] Starting Function
+[02/13/2017 19:14:16][                         Main'] Starting Function
+[02/13/2017 19:14:16][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:14:16][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:14:16][      GetSystemIntializeInfo()] Completed with SUCCESS
+[02/13/2017 19:14:16][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
+[02/13/2017 19:14:16][                         Main'] Calling Function ConnectToCompany()
+[02/13/2017 19:14:20][            ConnectToCompany()] Source Company connected  successfully DETLIV
+[02/13/2017 19:14:20][                         Main'] Source Connected SUCCESSFULLY 
+[02/13/2017 19:14:20][                         Main'] Calling Function ConnectToTargetCompany()
+[02/13/2017 19:14:21][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
+[02/13/2017 19:14:21][                         Main'] Target Connected SUCCESSFULLY 
+[02/13/2017 19:14:21][                         Main'] ITEM  SYNC 
+[02/13/2017 19:14:21][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:14:21][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:14:21][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:14:21][             HANAtoDatatable()] Error in HANA Connection/Query passed..........
+[02/13/2017 19:14:21][                         Main'] Item Master Sync Completed with ERROR
+[02/13/2017 19:14:25][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/13/2017 19:14:27][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:14:29][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:14:29][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:14:40][              UpdateBPMaster()] Starting Function
+[02/13/2017 19:15:52][                         Main'] Starting Function
+[02/13/2017 19:15:52][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:15:52][      GetSystemIntializeInfo()] Starting Function
+[02/13/2017 19:15:52][      GetSystemIntializeInfo()] Completed with SUCCESS
+[02/13/2017 19:15:52][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
+[02/13/2017 19:15:52][                         Main'] Calling Function ConnectToCompany()
+[02/13/2017 19:15:56][            ConnectToCompany()] Source Company connected  successfully DETLIV
+[02/13/2017 19:15:56][                         Main'] Source Connected SUCCESSFULLY 
+[02/13/2017 19:15:56][                         Main'] Calling Function ConnectToTargetCompany()
+[02/13/2017 19:15:58][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
+[02/13/2017 19:15:58][                         Main'] Target Connected SUCCESSFULLY 
+[02/13/2017 19:15:58][                         Main'] ITEM  SYNC 
+[02/13/2017 19:15:58][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:15:58][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:15:58][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:15:58][             HANAtoDatatable()] Error in HANA Connection/Query passed..........
+[02/13/2017 19:15:58][                         Main'] Item Master Sync Completed with ERROR
+[02/13/2017 19:16:01][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/13/2017 19:16:02][                         Main'] Calling HANAtoDatatable() 
+[02/13/2017 19:16:02][             HANAtoDatatable()] HANA Connection
+[02/13/2017 19:16:02][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/13/2017 19:16:14][              UpdateBPMaster()] Starting Function
+[02/13/2017 19:16:28][              UpdateBPMaster()] Error: CardCode not found!!!!
+[02/14/2017 12:06:53][                         Main'] Starting Function
+[02/14/2017 12:06:53][      GetSystemIntializeInfo()] Starting Function
+[02/14/2017 12:06:53][      GetSystemIntializeInfo()] Starting Function
+[02/14/2017 12:06:53][      GetSystemIntializeInfo()] Completed with SUCCESS
+[02/14/2017 12:06:53][                         Main'] App DETLIV;GLINKLIVE;192.168.1.223:30015;SYSTEM;Sapb1hana;manager;Acc1;manager;Acc1
+[02/14/2017 12:06:53][                         Main'] Calling Function ConnectToCompany()
+[02/14/2017 12:06:58][            ConnectToCompany()] Source Company connected  successfully DETLIV
+[02/14/2017 12:06:58][                         Main'] Source Connected SUCCESSFULLY 
+[02/14/2017 12:06:58][                         Main'] Calling Function ConnectToTargetCompany()
+[02/14/2017 12:06:59][            ConnectToCompany()] Target Company connected  successfully GLINKLIVE
+[02/14/2017 12:06:59][                         Main'] Target Connected SUCCESSFULLY 
+[02/14/2017 12:06:59][                         Main'] ITEM  SYNC SELECT T0."Code", T0."Name", T0."ItemCode" FROM "AE_ITEMMASTER_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/14/2017 12:06:59][                         Main'] Calling HANAtoDatatable() 
+[02/14/2017 12:06:59][             HANAtoDatatable()] HANA Connection
+[02/14/2017 12:06:59][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/14/2017 12:06:59][            UpdateItemMaster()] Starting Function
+[02/14/2017 12:06:59][            UpdateItemMaster()] Error: ItemCode not found!!!!
+[02/14/2017 12:06:59][            UpdateItemMaster()] Starting Function
+[02/14/2017 12:06:59][            UpdateItemMaster()] Error: ItemCode not found!!!!
+[02/14/2017 12:06:59][            UpdateItemMaster()] Starting Function
+[02/14/2017 12:06:59][            UpdateItemMaster()] Error: ItemCode not found!!!!
+[02/14/2017 12:06:59][            UpdateItemMaster()] Starting Function
+[02/14/2017 12:06:59][            UpdateItemMaster()] Error: ItemCode not found!!!!
+[02/14/2017 12:06:59][            UpdateItemMaster()] Starting Function
+[02/14/2017 12:06:59][            UpdateItemMaster()] Error: ItemCode not found!!!!
+[02/14/2017 12:07:13][                         Main'] BP  SYNC SELECT T0."Code", T0."Name", T0."BPCode" FROM "AE_BP_SYNC"  T0 WHERE T0."Status"  <> 'SYNCHRONIZED'
+[02/14/2017 12:07:14][                         Main'] Calling HANAtoDatatable() 
+[02/14/2017 12:07:15][             HANAtoDatatable()] HANA Connection
+[02/14/2017 12:07:15][             HANAtoDatatable()] Successfully HANA Connection done and Query passed..........
+[02/14/2017 12:07:34][              UpdateBPMaster()] Starting Function
+[02/14/2017 12:07:39][              UpdateBPMaster()] Error: CardCode not found!!!!
+[02/14/2017 12:08:08][              UpdateBPMaster()] Starting Function
+[02/14/2017 12:08:38][              UpdateBPMaster()] Getting Contact Info select ROW_NUMBER() OVER(ORDER BY T1."CntctCode" ) -1 "No", T1."CntctCode" , T1."Name" , T1."Position"  from"OCPR" T1  where T1."CardCode" ='VGL_TEST-SGD' order by T1."CntctCode" 
+[02/14/2017 12:08:44][              UpdateBPMaster()] Conected with Company GLINKLIVE
+[02/14/2017 12:09:02][              UpdateBPMaster()] Calling Function CreateBPMaster()
+[02/14/2017 12:09:09][              CreateBPMaster()] Starting Function
+[02/14/2017 12:09:53][              CreateBPMaster()] Getting Shipping Code
+[02/14/2017 12:10:34][              CreateBPMaster()] Getting Shipping Code

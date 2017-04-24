@@ -140,7 +140,10 @@
                 'oDTS_ItemLog.Columns.Add("Status", GetType(String))
                 'oDTS_ItemLog.Columns.Add("Msg", GetType(String))
 
+                ''Commented on 13feb2017
                 sItemSyncSQl = "SELECT T0.""Code"", T0.""Name"", T0.""ItemCode"" FROM ""AE_ITEMMASTER_SYNC""  T0 WHERE T0.""Status""  <> 'SYNCHRONIZED'"
+                'sItemSyncSQl = ""
+
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("ITEM  SYNC " & sItemSyncSQl, sFuncName)
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Calling HANAtoDatatable() ", sFuncName)
                 oDT_ItemCode = HANAtoDatatable(sItemSyncSQl, sErrDesc)
@@ -224,6 +227,7 @@
                 sBPSyncSQl = "SELECT T0.""Code"", T0.""Name"", T0.""BPCode"" FROM ""AE_BP_SYNC""  T0 WHERE T0.""Status""  <> 'SYNCHRONIZED'"
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("BP  SYNC " & sBPSyncSQl, sFuncName)
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Calling HANAtoDatatable() ", sFuncName)
+                'sErrDesc = ""
                 oDT_BPCode = HANAtoDatatable(sBPSyncSQl, sErrDesc)
                 If Not String.IsNullOrEmpty(sErrDesc) Then Throw New ArgumentException(sErrDesc)
 
@@ -300,7 +304,9 @@
                 'oDTS_BPPLLog.Columns.Add("Status", GetType(String))
                 'oDTS_BPPLLog.Columns.Add("Msg", GetType(String))
 
+                ''Commented on 13feb2017
                 sBPPLSyncSQl = "SELECT T0.""Code"", T0.""Name"", T0.""BPCode"", T0.""ItemCode"" FROM ""AE_BP_PRICE_SYNC""  T0 WHERE T0.""Status""  <> 'SYNCHRONIZED'"
+                'sBPPLSyncSQl = ""
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("BP Price List  SYNC " & sBPPLSyncSQl, sFuncName)
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Calling HANAtoDatatable() ", sFuncName)
                 oDT_BPPLCode = HANAtoDatatable(sBPPLSyncSQl, sErrDesc)
