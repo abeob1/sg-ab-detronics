@@ -1,0 +1,24 @@
+RDP: 119.73.159.161:53389
+Id administrator
+Password Detronics2011
+Or detronics2011
+ 
+Hana studio 
+Id system
+Password Sapb1hana
+ 
+Live DB is DETLIV
+Manager password is Acc1
+
+Report Deployed in Server:
+
+Previous Version: VendorTransactionReport
+Latest version : VendorTransactionReport - TEST (database DETLIV and DETTEST4)
+Path: C:\Abeo\Report
+
+Console Serve Path:
+
+C:\Program Files\sap\SAP Business One\Abeo\Master Data Sync_V2
+
+Source Code in Server:
+C:\Program Files\sap\SAP Business One\Abeo\old\backup\AE_DETRONICS_V01_DLL\AE_DETRONICS_V01_16Jan2017_1143AM
