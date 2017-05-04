@@ -1,0 +1,15 @@
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\bin\Detronics_GST_8.0.exe
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\bin\Detronics_GST_8.xml
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\ResolveAssemblyReference.cache
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\AddOnInstaller.Interop.SAPbouiCOM.dll
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\AddOnInstaller.Interop.SAPbobsCOM.dll
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\AddOnInstaller.Kay_Ess_JE.exe
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\AddOnInstaller.AddOnInstaller.BaseControl.resources
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\AddOnInstaller.AddOnInstaller.BaseForm.resources
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\AddOnInstaller.AddOnInstaller.InstallEndedControl.resources
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\AddOnInstaller.AddOnInstaller.InstallMainControl.resources
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\AddOnInstaller.AddOnInstaller.InstallPathControl.resources
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\AddOnInstaller.AddOnInstaller.UnInstallControl.resources
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\Detronics_GST_8.0.vbproj.GenerateResource.Cache
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\Detronics_GST_8.0.exe
+D:\Gopi\Detronics\Detronics_GST_8.0\Detronics_GST_8.0\Detronics_GST_8.0\obj\Release\Detronics_GST_8.xml
